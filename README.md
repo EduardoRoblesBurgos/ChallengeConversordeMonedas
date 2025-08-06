@@ -4,7 +4,7 @@ Texto
 
 Texto
 
-![alt text](amigosecreto.jpg)
+![alt text](currencyconversion.jpg)
 
 - `Paso 1`: xxx
 - `Paso 2`: xxx
