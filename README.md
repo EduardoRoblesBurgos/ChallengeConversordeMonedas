@@ -4,7 +4,7 @@ Texto
 
 Texto
 
-![alt text](currencyconversion.jpg)
+![Conversor](currencyconversion.jpg)
 
 - `Paso 1`: xxx
 - `Paso 2`: xxx
