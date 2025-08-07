@@ -1,4 +1,4 @@
-<h1 align="center">Conversor de Mnedas</h1>
+<h1 align="center">Conversor de Monedas</h1>
 
 Texto
 
