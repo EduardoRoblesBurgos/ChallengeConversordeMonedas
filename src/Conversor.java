@@ -8,10 +8,10 @@ public class Conversor {
         return 2;
     }
 
-    public int convertirMoneda2(String monedaEntrada, String monedaDestino){
+    public void convertirMoneda2(String monedaEntrada, String monedaDestino){
         System.out.println("Digite la cantidad de la moneda a convertir:");
         int cantidad = teclado.nextInt();
         int resultado = 2;
-        return resultado;
+        System.out.println(cantidad + " USD es equivalente a: " + resultado + " ARG");
     }
 }

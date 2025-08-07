@@ -41,8 +41,8 @@ public class Principal {
                     //System.out.println("Digite la cantidad de la moneda a convertir:");
                     //cantidad = teclado.nextInt();
                     //resultado = convertir.convertirMoneda("USD","ARG",cantidad);
-                    resultado = convertir.convertirMoneda2("USD","ARG");
-                    System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
+                    convertir.convertirMoneda2("USD","ARG");
+                    //System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
                     //System.out.println("uno"+cantidad);
                     break;
                 case 2:
@@ -81,7 +81,9 @@ public class Principal {
                     //System.out.println("uno"+cantidad);
                     break;
                 case 7:
+                    System.out.println("********************************");
                     System.out.println("Programa Finalizado");
+                    teclado.close();
                     break;
                 default:
                     System.out.println("Error");
