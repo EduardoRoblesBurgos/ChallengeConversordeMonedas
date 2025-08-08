@@ -1,12 +1,17 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Principal {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
         int opcion = 0;
-        int cantidad = 0;
-        /*
-        String menu = """
-                        ****¡Conversor de Monedas!:****
+
+        Scanner teclado = new Scanner(System.in);
+        ConversorMonedas convertir = new ConversorMonedas();
+
+        while(opcion != 7){
+            /*
+            String menu = """
+                        ****¡ConversorMonedas de Monedas!:****
                         1. Dólar => Peso Argentino
                         2. Peso Argentino => Dólar
                         3. Dólar => Real Brasileño
@@ -16,15 +21,11 @@ public class Principal {
                         7. Salir");
                         Elija una opción válida:
                 """;
-        */
+            */
 
-        Scanner teclado = new Scanner(System.in);
-        Conversor convertir = new Conversor();
-
-        while(opcion != 7){
             //menú
             System.out.println("********************************");
-            System.out.println("¡Conversor de Monedas!, Opciones:");
+            System.out.println("¡ConversorMonedas de Monedas!, Opciones:");
             System.out.println("1. Dólar => Peso Argentino");
             System.out.println("2. Peso Argentino => Dólar");
             System.out.println("3. Dólar => Real Brasileño");
@@ -35,50 +36,24 @@ public class Principal {
             System.out.println("\nDigite opción válida:");
 
             opcion = teclado.nextInt();
-            int resultado = 0;
             switch (opcion){
                 case 1:
-                    //System.out.println("Digite la cantidad de la moneda a convertir:");
-                    //cantidad = teclado.nextInt();
-                    //resultado = convertir.convertirMoneda("USD","ARG",cantidad);
-                    convertir.convertirMoneda2("USD","ARG");
-                    //System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
-                    //System.out.println("uno"+cantidad);
+                    convertir.convertirMoneda("USD","ARS");
                     break;
                 case 2:
-                    System.out.println("Digite la cantidad de la moneda a convertir:");
-                    cantidad = teclado.nextInt();
-                    resultado = convertir.convertirMoneda("USD","ARG",cantidad);
-                    System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
-                    //System.out.println("uno"+cantidad);
+                    convertir.convertirMoneda("ARS","USD");
                     break;
                 case 3:
-                    System.out.println("Digite la cantidad de la moneda a convertir:");
-                    cantidad = teclado.nextInt();
-                    resultado = convertir.convertirMoneda("USD","ARG",cantidad);
-                    System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
-                    //System.out.println("uno"+cantidad);
+                    convertir.convertirMoneda("USD","BRL");
                     break;
                 case 4:
-                    System.out.println("Digite la cantidad de la moneda a convertir:");
-                    cantidad = teclado.nextInt();
-                    resultado = convertir.convertirMoneda("USD","ARG",cantidad);
-                    System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
-                    //System.out.println("uno"+cantidad);
+                    convertir.convertirMoneda("BRL","USD");
                     break;
                 case 5:
-                    System.out.println("Digite la cantidad de la moneda a convertir:");
-                    cantidad = teclado.nextInt();
-                    resultado = convertir.convertirMoneda("USD","ARG",cantidad);
-                    System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
-                    //System.out.println("uno"+cantidad);
+                    convertir.convertirMoneda("USD","COP");
                     break;
                 case 6:
-                    System.out.println("Digite la cantidad de la moneda a convertir:");
-                    cantidad = teclado.nextInt();
-                    resultado = convertir.convertirMoneda("USD","ARG",cantidad);
-                    System.out.println(cantidad + "USD es equivalente a: " + resultado + "ARG");
-                    //System.out.println("uno"+cantidad);
+                    convertir.convertirMoneda("COP","USD");
                     break;
                 case 7:
                     System.out.println("********************************");

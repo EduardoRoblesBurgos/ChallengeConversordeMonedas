@@ -1,10 +1,10 @@
-<h1 align="center">Conversor de Monedas</h1>
+<h1 align="center">ConversorMonedas de Monedas</h1>
 
 Texto
 
 Texto
 
-![Conversor](currencyconversion.jpg)
+![ConversorMonedas](currencyconversion.jpg)
 
 - `Paso 1`: xxx
 - `Paso 2`: xxx
