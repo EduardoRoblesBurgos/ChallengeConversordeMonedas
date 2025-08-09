@@ -1,4 +1,4 @@
-<h1 align="center">ConversorMonedas de Monedas</h1>
+<h1 align="center">Conversor de Monedas</h1>
 
 - Elige entre 4 modenas de numdo, y obtiene su tasa de intercambio.
 - Los países son Estados Unidos, Brasil, Colombia y Argentina
